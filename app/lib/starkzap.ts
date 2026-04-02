@@ -74,7 +74,6 @@ export async function sendConfidentialTip(
   amount: string,
   tokenSymbol: "USDC" | "STRK"
 ): Promise<{ success: boolean; message: string; explorerUrl?: string }> {
-  // Dynamically import to avoid bundling issues when Tongo not installed
   let TongoConfidential: any;
   try {
     const mod = await import("starkzap");
@@ -102,7 +101,7 @@ export async function sendConfidentialTip(
 
   // 2. Derive recipient's confidential identity from their Starknet address
   const recipientConfidential = new TongoConfidential({
-    privateKey: fromAddress(recipientAddress).toString(), // derive from address
+    privateKey: fromAddress(recipientAddress).toString(), 
     contractAddress,
     provider: wallet.getProvider(),
   });
