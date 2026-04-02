@@ -43,11 +43,11 @@ export default function RootLayout({
           <div className="min-h-screen flex flex-col relative z-10 overflow-x-hidden">
             
             <header className="sticky top-0 z-[100] w-full px-4 py-4">
-              <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 bg-black/40 backdrop-blur-xl border border-white/5 rounded-[2rem] shadow-2xl shadow-black/50">
+              <nav className="max-w-7xl mx-auto flex items-center justify-between px-2 py-1.5 bg-black/40 backdrop-blur-3xl border border-white/5 rounded-[2rem] shadow-sm shadow-black/50">
                 
                 <div className="flex items-center gap-3 group">
                   <div className="relative">
-                    <div className="absolute inset-0 bg-purple-600/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-purple-600/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
                     <div className="relative bg-gradient-to-br from-purple-500 to-indigo-600 p-2 rounded-xl transition-transform group-hover:scale-110">
                       <Zap className="h-5 w-5 text-white fill-white" strokeWidth={2.5} />
                     </div>

@@ -335,7 +335,6 @@ export default function Home() {
   // ── Connected ──────────────────────────────────────────────────────────────
   return (
     <div className={`max-w-xl mx-auto transition-colors duration-700`}>
-      {/* Dynamic background glow */}
       <div
         className={`fixed inset-0 -z-10 transition-opacity duration-1000 
           ${isConfidential ? "opacity-40" : "opacity-20"}`}
@@ -349,7 +348,7 @@ export default function Home() {
 
       <div
         className={`backdrop-blur-sm rounded-[2.5rem] border transition-all 
-          duration-500 overflow-hidden shadow-2xl ${
+          duration-500 overflow-hidden shadow-sm ${
             isConfidential
               ? "bg-slate-950/80 border-indigo-500/30 shadow-indigo-500/10"
               : "bg-neutral-900/80 border-white/10 shadow-black/50"

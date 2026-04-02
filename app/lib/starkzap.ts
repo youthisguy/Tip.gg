@@ -92,15 +92,6 @@ export async function sendConfidentialTip(
   const contractAddress =
     NETWORK === "mainnet" ? TONGO_CONTRACTS.mainnet : TONGO_CONTRACTS.sepolia;
 
-  if (
-    contractAddress ===
-    "0x0000000000000000000000000000000000000000"
-  ) {
-    throw new Error(
-      "Tongo contract address not configured for this network yet"
-    );
-  }
-
   // 1. Create sender's confidential instance
   const senderKey = getOrCreateTongoKey();
   const senderConfidential = new TongoConfidential({
