@@ -217,7 +217,7 @@ export async function sendConfidentialTip(
     .confidentialTransfer(senderConfidential, {
       amount: parsedAmount,
       to: recipientConfidential.recipientId,
-      sender: walletAddressStr,
+      sender: walletAddressStr as any,
     })
     .send();
   await transferTx.wait();
