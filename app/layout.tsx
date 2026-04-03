@@ -57,9 +57,9 @@ export default function RootLayout({
                     <span className="text-xl font-black tracking-tighter text-white italic">
                       TIP<span className="text-purple-500">.GG</span>
                     </span>
-                    <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-0.5">
+                    {/* <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-0.5">
                       Starknet
-                    </span>
+                    </span> */}
                   </div>
 
                   <div className="ml-2 h-8 w-[1px] bg-white/10 hidden sm:block" />
@@ -83,7 +83,7 @@ export default function RootLayout({
               <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 transition-all cursor-default">
                   <HandCoins size={16} />
-                  <span className="text-xs font-bold tracking-tighter uppercase">Verified by Starknet</span>
+                  <span className="text-xs font-bold tracking-tighter uppercase">Powered by Starkzap</span>
                 </div>
                 <div className="flex gap-8 text-[10px] font-bold text-gray-600 uppercase tracking-[0.2em]">
                   <a href="#" className="hover:text-purple-400 transition-colors">Privacy</a>

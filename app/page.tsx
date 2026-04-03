@@ -262,11 +262,9 @@ function TipContent() {
 
   return (
     <div className={`max-w-xl mx-auto transition-colors duration-700`}>
-      <div className={`fixed inset-0 -z-10 transition-opacity duration-1000 ${isConfidential ? "opacity-40" : "opacity-20"}`}>
-        <div className={`absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 blur-[120px] rounded-full transition-colors duration-700 ${isConfidential ? "bg-indigo-900" : "bg-purple-600"}`} />
-      </div>
 
-      <div className={`backdrop-blur-sm rounded-[2.5rem] border transition-all duration-500 overflow-hidden shadow-sm ${isConfidential ? "bg-slate-950/80 border-indigo-500/30 shadow-indigo-500/10" : "bg-neutral-900/80 border-white/10 shadow-black/50"}`}>
+
+      <div className={` rounded-[2.5rem] border transition-all duration-500 overflow-hidden shadow-sm ${isConfidential ? "bg-slate-950/80 border-indigo-500/30 shadow-indigo-500/10" : "bg-neutral-900/80 border-white/10 shadow-black/50"}`}>
         <div className="p-8 pb-4">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -286,7 +284,7 @@ function TipContent() {
             <div className="flex items-center gap-3">
               {isConfidential ? <ShieldCheck className="w-5 h-5" /> : <Shield className="w-5 h-5" />}
               <div className="text-left">
-                <p className="text-sm font-bold">{isConfidential ? "Private Mode — Identity Hidden" : "Confidential Transfer"}</p>
+                <p className="text-sm font-bold">{isConfidential ? "Private Mode" : "Confidential Transfer"}</p>
                 <p className="text-[10px] opacity-60">{isConfidential ? "ZK proof hides sender + amount onchain" : "Hide your identity using zk-proofs"}</p>
               </div>
             </div>

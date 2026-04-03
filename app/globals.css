@@ -2,7 +2,7 @@
 
 :root {
   --background: #050505;
-  --grid-color: rgba(147, 51, 234, 0.15) 
+  --grid-color: rgba(147, 51, 234, 0.15);
   --cursor-x: 50%;
   --cursor-y: 50%;
 }
